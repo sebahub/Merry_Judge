@@ -1,0 +1,52 @@
+#termine
+    width: 100%
+    margin-top: 25px
+
+
+    .table
+        //margin: 0 0 40px 0
+        width: 99%
+        box-shadow: 0 1px 3px rgba(0,0,0,0.2)
+        display: table
+        margin: auto
+        font-size: 1rem
+
+    .row
+        display: table-row
+        background: #f6f6f6
+        &:nth-of-type(odd)
+            background: #e9e9e9
+        &.header
+            font-weight: 400
+            color: #ffffff
+            background: $schmuckfarbe
+        &.green
+            background: #27ae60
+        &.blue
+            background: #2980b9
+        i
+            font-size: 25px
+
+    .cell
+        //padding: 6px 12px
+        display: table-cell
+    .bevorstehend
+        a
+            color: black
+        
+    .vergangen
+        margin-top: 25px
+        
+    
+        
+        
+    @media screen and (min-width: $small)
+        .bevorstehend
+            width: 49%
+            float: left
+        .vergangen
+            width: 49%
+            float: right
+            margin: 0
+    
+        
